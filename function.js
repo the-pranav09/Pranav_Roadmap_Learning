@@ -192,9 +192,9 @@
 
 
 
-(function(){
-    let password="My PassWord"
-    console.log(password, "only show inside function.");
-})();
+// (function(){
+//     let password="My PassWord"
+//     console.log(password, "only show inside function.");
+// })();
 
-console.log(password, "They can not show the value. becouse iife is create privete variable.");
+// console.log(password, "They can not show the value. becouse iife is create privete variable.");
