@@ -58,3 +58,14 @@
 // console.log(obj2)
 
 
+let ob1 = {
+    Game:"Uncharted",
+    Price:10000,
+    Graphics: "Highend",
+    Requirment:{
+        chip:"Ryzen",
+        Gcard: 4050
+    }
+}
+
+console.log(ob1)
