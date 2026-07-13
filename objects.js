@@ -79,3 +79,7 @@
 // let obj2 = JSON.parse(JSON.stringify(ob1))
 
 // console.log(obj2)
+
+// Optional chaining :- use jab hum nested object ki kuch change ho jay to "Error" show nahi karega "Undefine" show karega.
+// console.log(ob1?.Requirment?.chip) // here we enter correct information they provide "value" 
+// console.log(ob1?.Requirmentt?.chip) // here we enter incorrect information they show "Undefine" not show the error.
