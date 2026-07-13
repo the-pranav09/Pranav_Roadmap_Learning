@@ -58,14 +58,24 @@
 // console.log(obj2)
 
 
-let ob1 = {
-    Game:"Uncharted",
-    Price:10000,
-    Graphics: "Highend",
-    Requirment:{
-        chip:"Ryzen",
-        Gcard: 4050
-    }
-}
+// let ob1 = {
+//     Game:"Uncharted",
+//     Price:10000,
+//     Graphics: "Highend",
+//     Requirment:{
+//         chip:"Ryzen",
+//         Gcard: 4050
+//     }
+// }
 
-console.log(ob1)
+// console.log(ob1)
+
+
+// JSON.stringify(ob1) // convert the object in string.
+// JSON.parse(JSON.stringify(ob1)) // convert the string in original form.
+// // If we use spread operator to copy 'Nested object' they just copy as refferance not properly copy of object.
+// // * We us this method to copy the "Nested Object".
+// // * That is "Deep Cloning".
+// let obj2 = JSON.parse(JSON.stringify(ob1))
+
+// console.log(obj2)
