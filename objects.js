@@ -70,7 +70,6 @@
 
 // console.log(ob1)
 
-
 // JSON.stringify(ob1) // convert the object in string.
 // JSON.parse(JSON.stringify(ob1)) // convert the string in original form.
 // // If we use spread operator to copy 'Nested object' they just copy as refferance not properly copy of object.
@@ -83,3 +82,133 @@
 // Optional chaining :- use jab hum nested object ki kuch change ho jay to "Error" show nahi karega "Undefine" show karega.
 // console.log(ob1?.Requirment?.chip) // here we enter correct information they provide "value" 
 // console.log(ob1?.Requirmentt?.chip) // here we enter incorrect information they show "Undefine" not show the error.
+
+
+
+// practice-------------------------------------------------------------------------------------------------------------------
+
+// create the object for student with name, age, inEnrolled.
+// let student = {
+//     name: "Raj",
+//     age: 20,
+//     inEnrolled: "yes",
+// }
+// console.log(student);
+
+
+// check we can use "Boolean" & "Number" as 'key' in Object.
+// so Yes we can use "Boolean" & "Number" as 'Key'.
+// let obj = {
+//     true: "Yes",
+//     45: "Yes",
+// }
+// console.log(obj)
+
+
+// Access the value of "first-name" from this object.
+// let user = {
+//     "first-name": "AbhiRaj"
+// }
+// console.log(user["first-name"])
+
+
+// // Given dynamic key 'let key = "age"', how will you access 'user[key]'
+// let key = "age" 
+
+// let user = { //access the dynamiclly value in object.
+//     age: 22 
+// }
+// console.log(user[key]) 
+// // "Key" ki value 'age'. (let key = "age")
+// // 'user' ke andar add hoga 'age'. (user[key])
+// // and 'user' ke andar ki 'age' ki value '22'.
+
+
+// from the object below, print the latitude.
+//  const location = {
+//     city: "pune",
+//     coordinate:{
+//         lat: 25.41,
+//         lng: 77.63
+//     }
+// };
+// console.log(location.coordinate.lat)
+// what will happen if coordinate is missing? How can you prevent errors?
+// We prevent error using "Optional Chaining".
+// console.log(location?.coordinates?.lat);
+
+
+// Destructuring the city and lat from the location Object above. 
+// Destrucutring means create the variables of that 'value.' using spread operator.
+// const location = {
+//     city: "pune",
+//     coordinate:{
+//         lat: 25.41,
+//         lng: 77.63
+//     }
+// };
+
+// let {city, lat} = {...location, ...location.coordinate}
+// let {city} = location;
+// let {lat} = location.coordinate
+// console.log(city)
+// console.log(lat)
+
+
+// Destructure the key "first-name" as variable called 'firstName'
+// let user = {
+//     "first-name": "AbhiRaj"
+// }
+// let {"first-name": firstName } = user; // 'firstName' variable banega, & value nikalegi 'first-name' ki "user" main se.
+// console.log(firstName)
+
+
+// use 'for in' loop to log all keys in this object.
+// const course = {
+//     title: "JavaScript",
+//     duraton: '4 Weeks',
+// }
+// for(let key in course){
+//     console.log(key)
+// }
+
+
+// Use object.entries() to print all 'key: value' pairs.
+// const course = {
+//     title: "JavaScript",
+//     duraton: '4 Weeks',
+// }
+// // "Object.entries" create the array of array.
+// Object.entries(course).forEach(function(ele){
+//     console.log(ele[0] + ": " + ele[1])
+// })
+
+
+// copy the object using spread operator.
+// const original = {a: 1, b: 2};
+// let obj = {...original}
+// console.log(obj)
+
+// // what isproblem with belwo code.
+// const obj1 = {info: {score: 80}};
+// const clone = {...obj1}
+// clone.info.score = 100;
+// console.log(obj1.info.score) // --> change the obj1 value to 100 --> becouse they copy nested object as "Refferance".
+
+// // "Deep Clone" the obj1 properly.
+// let copy = JSON.parse(JSON.stringify(obj1));
+// copy.info.score = 100
+// console.log(copy.info.score)
+
+// Rewrite this properly using opitional chaining.
+// const person = {};
+// console.log(person.profile.name); // Rewrite this line using "Optional Chaining"
+// console.log(person?.profile?.name);
+
+// Use a variable to dynamically assign the property.
+const key = "role";
+let user = {
+    uname: "Golya",
+    [key]: "Admin" // Key main ek value store hai that is "role" and us "role" ko ek value assign kr di("role: admin").
+}
+console.log(user)
