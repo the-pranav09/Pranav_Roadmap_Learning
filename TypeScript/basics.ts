@@ -47,3 +47,17 @@
 // 'Annotation' declaring the data_type to variable.(For Better Clarity).
 // let a:string = "Ro-Hit" // adding the data_type.
 // let no:number = 45
+
+
+// 'Function & Return Type'-------------------------------------------------------------------------------------------------------- //
+// we can also declare the 'parameters type' and 'return value type'.
+// function abc(a:number, b:number): number{ // function ko batana padta hai ki konsi type ki value return ho rahi hai.
+//     return a+b;
+// }
+// console.log(abc(25, 20))
+
+// 'void' use when jab function not returning vlaue. jab koi value return nahi hoti tab 'void' use karo.
+function wel():void{ // 'void' show like undefine.
+    console.log("Hit-Man");
+} 
+wel()
