@@ -57,7 +57,7 @@
 // console.log(abc(25, 20))
 
 // 'void' use when jab function not returning vlaue. jab koi value return nahi hoti tab 'void' use karo.
-function wel():void{ // 'void' show like undefine.
+function welcome():void{ // 'void' show like undefine.
     console.log("Hit-Man");
 } 
-wel()
+welcome()

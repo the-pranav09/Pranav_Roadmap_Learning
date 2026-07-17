@@ -42,7 +42,7 @@
 // }
 // console.log(abc(25, 20))
 // 'void' use when jab function not returning vlaue. jab koi value return nahi hoti tab 'void' use karo.
-function wel() {
+function welcome() {
     console.log("Hit-Man");
 }
-wel();
+welcome();
