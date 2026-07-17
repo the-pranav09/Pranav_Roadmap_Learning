@@ -5,7 +5,7 @@
 //     email:string,
 //     password:string,
 //     contact_no:number,
-//     gender?:string
+//     gender?:string //'?' that value are optional. not mandatory to enter.
 // }
 // function abcd (obj: user){ // here 'object' use the interface of 'user' means ki "user jaisa type chahiye object ka" 
 //     console.log(obj.email)
