@@ -56,7 +56,7 @@ import { useState } from "react";
         
         
 // Two-way Bainding----------------------------------------------------------------------------------------------------------------------------------------------------------------//
-
+// it's like two-way communication (UI mein input change hua to state bhi update ho jaata hai) and (state change hua to UI apne aap update ho jaata hai).
 export const App = () => {
 
   const [getUser, setGetUser] = useState("")
