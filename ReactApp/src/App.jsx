@@ -57,6 +57,7 @@ import { useState } from "react";
         
 // Two-way Bainding----------------------------------------------------------------------------------------------------------------------------------------------------------------//
 // it's like two-way communication (UI mein input change hua to state bhi update ho jaata hai) and (state change hua to UI apne aap update ho jaata hai).
+
 // export const App = () => {
 
 //   const [getUser, setGetUser] = useState("")
@@ -68,22 +69,36 @@ import { useState } from "react";
 //     setGetUser("")
 //   }
 
-  return (
-    <div>
-      <form onSubmit={(e)=>{
-        submitHandler(e)
-      }}>
-          <input value={getUser} 
-          onChange={(e)=>{
-            setGetUser(e.target.value)
-          }} 
-          className="px-4px rounded py-3 text-xl m-5 bg-white text-black" type="text" placeholder="Enter the Name"/>
-          <button className="px-4px py-3 w-50 text-xl text-white bg-emerald-600 rounded">Upload</button>
-      </form>
-    </div>
-  )
-}       
-        
+//   return (
+//     <div>
+//       <form onSubmit={(e)=>{
+//         submitHandler(e)
+//       }}>
+//           <input value={getUser} 
+//           onChange={(e)=>{
+//             setGetUser(e.target.value)
+//           }} 
+//           className="px-4px rounded py-3 text-xl m-5 bg-white text-black" type="text" placeholder="Enter the Name"/>
+//           <button className="px-4px py-3 w-50 text-xl text-white bg-emerald-600 rounded">Upload</button>
+//       </form>
+//     </div>
+//   )
+// }       
+      
+// List ------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// const App = () => {
+//     const arr = ["Anjeer","Kiwi", "Guava", "Dragon"]
+//   return (
+//     <div>
+//         <h1>This Fruit List</h1>
+//         <ul>
+//             {arr.map((arr, index) => ( // '<li>' every element ko render karte time ek list create ho rahi hai
+//                 <li key={index}>{arr}</li> // 'key' contain the unique id for every items of array. 
+//             ))}
+//         </ul>
+//     </div>
+//   )
+// }
 
 
 export default App
