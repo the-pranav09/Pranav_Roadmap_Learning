@@ -55,8 +55,9 @@ import { useState } from "react";
 //         }
         
         
-// Two-way Bainding----------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// Two-way Binding----------------------------------------------------------------------------------------------------------------------------------------------------------------//
 // it's like two-way communication (UI mein input change hua to state bhi update ho jaata hai) and (state change hua to UI apne aap update ho jaata hai).
+// User Input → State Update → UI Update.
 
 // export const App = () => {
 
@@ -74,9 +75,9 @@ import { useState } from "react";
 //       <form onSubmit={(e)=>{
 //         submitHandler(e)
 //       }}>
-//           <input value={getUser} 
+//           <input value={getUser} // input value hamesha useState se aygi
 //           onChange={(e)=>{
-//             setGetUser(e.target.value)
+//             setGetUser(e.target.value) // jab user koi value type karega to value update ho jayega.
 //           }} 
 //           className="px-4px rounded py-3 text-xl m-5 bg-white text-black" type="text" placeholder="Enter the Name"/>
 //           <button className="px-4px py-3 w-50 text-xl text-white bg-emerald-600 rounded">Upload</button>
