@@ -33,26 +33,26 @@ import { useState } from "react";
 
 
 // Form Handling ----------------------------------------------------------------------------------------------------------------------------------------------------------------//
-
+// 'Event' ek object hai jo browser deta hai, jab koi action hota hai(onSubmit, scroll, etc..) and uss action ki sari details store hoti hai object ke andar.
 // export const App = () => {
   
-  //   const submitHandler = (e) => {
-    //     e.preventDefault() // 'preventDefault()' method that is part of 'Event interface' and use for "stop" browser default behavior.(browser ke default behavior ko band krta hai).
+//     const submitHandler = (e) => {
+//         e.preventDefault() // 'preventDefault()' method that is part of 'Event interface' and use for "stop" browser default behavior.(browser ke default behavior ko band krta hai).
     
-    //     console.log("Hare Krishna")
-    //   }
+//         console.log("Submited") // form submit hone ke baad console main show hoga.
+//       }
     
-    //   return (
-      //     <div>
-      //       <form onSubmit={(e)=>{
-        //         submitHandler(e)
-        //       }}>
-        //         <input className="px-4px rounded py-3 text-xl m-5 bg-white text-black" type="text" placeholder="Enter the Name"/>
-        //         <button className="px-4px py-3 w-50 text-xl text-white bg-emerald-600 rounded">Upload</button>
-        //       </form>
-        //     </div>
-        //   )
-        // }
+//       return (
+//           <div>
+//             <form onSubmit={(e)=>{ // 'onSubmit' ek event listener hai jo form submit hone pr chalega. 
+//                 submitHandler(e)
+//               }}>
+//                 <input className="px-4px rounded py-3 text-xl m-5 bg-white text-black" type="text" placeholder="Enter the Name"/>
+//                 <button className="px-4px py-3 w-50 text-xl text-white bg-emerald-600 rounded">Upload</button>
+//               </form>
+//             </div>
+//           )
+//         }
         
         
 // Two-way Bainding----------------------------------------------------------------------------------------------------------------------------------------------------------------//
