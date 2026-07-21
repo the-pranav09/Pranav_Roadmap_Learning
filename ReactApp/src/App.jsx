@@ -4,10 +4,10 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <>
-        <Navbar />
+    <div>
+        <Navbar /> {/* Import 'Navbar' component. that reduse the cluter and that component we can reuse.*/}
         <Footer />
-    </> 
+    </div> 
   )
 }
 
