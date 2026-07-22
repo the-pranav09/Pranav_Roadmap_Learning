@@ -6,13 +6,14 @@ import Card from './components/Card';
 
 const App = () => {
   return (
-    <div className='p-10'>
-        <Navbar /> {/* Import 'Navbar' component. that reduse the cluter and that component we can reuse.*/}
-        <Footer />
-        
-        <Props_React a="Shreeman Legend"/>
+    <div>
+      <div className='p-10'>
+        {/* <Navbar /> Import 'Navbar' component. that reduse the cluter and that component we can reuse. */}
+        {/* <Footer />         */}
+        {/* <Props_React a="Shreeman Legend"/> */}
 
         <Card name="Rohit" surname="Sharma" city="Mumbai Cha Raja" age="39  "/>
+    </div>
     </div> 
   )
 }
