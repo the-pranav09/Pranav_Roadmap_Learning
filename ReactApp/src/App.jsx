@@ -1,54 +1,17 @@
 import React from 'react'
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Props_React from './components/props_react';
-import Card from './components/Card';
-import Api from './components/Api';
+import {Routes, Route} from 'react-router-dom'
+import About from './pages_route/About'
+import Games from './pages_route/Games'
 
 const App = () => {
-
-//   const games = [
-//     {
-//     "name": "Uncharted",
-//     "price": 10000,
-//     "type" : "Action Adventure",
-//     "img": "https://sandbox:/turn0image4" // replace with actual image URL
-//   },
-//   {
-//     "name": "The Last of Us",
-//     "price": 8000,
-//     "type" : "Action",
-//     "img": "https://sandbox:/turn0image7"
-//   },
-//   {
-//     "name": "Wolverine",
-//     "price": 8999,
-//     "type" : "Action",
-//     "img": "https://sandbox:/turn0image1"
-//   },
-//   {
-//     "name": "Spider-Man",
-//     "price": 4999,
-//     "type" : "Action Story",
-//     "img": "https://sandbox:/turn0image11"
-//   }
-// ]
-
-
   return (
     <div>
-      <div className='p-10'>
-        <Api />
-        {/* <Navbar /> Import 'Navbar' component. that reduse the cluter and that component we can reuse. */}
-        {/* <Footer />         */}
-        {/* <Props_React a="Shreeman Legend"/> */}
+        <Routes> {/*'Routes' ek container hai jis ke andar sare Routes create honge.*/}
+            <Route path='/about' element={<About />}/>
+            <Route path='/games' element={<Games />}/>
+        </Routes>
 
-        {/* {games.map(function(game){ */}
-          {/* return <Card gamename={game.name} price={game.price} type={game.type} image={game.img}/> */}
-        {/* })} */}
-
-      </div>
-    </div> 
+    </div>
   )
 }
 
