@@ -5,6 +5,35 @@ import Props_React from './components/props_react';
 import Card from './components/Card';
 
 const App = () => {
+
+  const games = [
+    {
+    "name": "Uncharted",
+    "price": 10000,
+    "type" : "Action Adventure",
+    "img": "https://sandbox:/turn0image4" // replace with actual image URL
+  },
+  {
+    "name": "The Last of Us",
+    "price": 8000,
+    "type" : "Action",
+    "img": "https://sandbox:/turn0image7"
+  },
+  {
+    "name": "Wolverine",
+    "price": 8999,
+    "type" : "Action",
+    "img": "https://sandbox:/turn0image1"
+  },
+  {
+    "name": "Spider-Man",
+    "price": 4999,
+    "type" : "Action Story",
+    "img": "https://sandbox:/turn0image11"
+  }
+]
+
+
   return (
     <div>
       <div className='p-10'>
@@ -12,8 +41,11 @@ const App = () => {
         {/* <Footer />         */}
         {/* <Props_React a="Shreeman Legend"/> */}
 
-        <Card name="Rohit" surname="Sharma" city="Mumbai Cha Raja" age="39  "/>
-    </div>
+        {games.map(function(game){
+          return <Card gamename={game.name} price={game.price} type={game.type} image={game.img}/>
+        })}
+
+      </div>
     </div> 
   )
 }
