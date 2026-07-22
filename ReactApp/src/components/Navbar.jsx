@@ -16,8 +16,8 @@ const Navbar = () => {
                 <h4 className='text-xl hover:text-white'>Community</h4>
             </div> */}
 
-            <div className='flex gap-8 items-center underline'>
-              <Link to ='/'>Home</Link>
+            <div className='flex gap-8 items-center underline'> {/* 'Link' ka use kiya hai routing karne ke liye matlab page change hone pr bhi page reload nahi hoga*/}
+              <Link to ='/'>Home</Link> {/*utna hi part change hoga jitna jaruri hai*/}
               <Link to ='/about'>About</Link>
               <Link to ='/games'>Games</Link>
               <Link to ='/contact'>Contact</Link>
