@@ -17,6 +17,8 @@ let G1 = new PS_5("Uncharted", "Action_Adventure", 9999)
 console.log(G1)
 let G2 = new PS_5("Last of Us", "Action", 5999) // multiple object.
 console.log(G2)
+let G3 = new PS_5("Wolverine", "Action", 7999)
+console.log(G3)
 
 
 // class Music{
