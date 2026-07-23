@@ -13,9 +13,9 @@ class PS_5{ // 'PS_5' is class name.
 
 // 'G1' is object hai jo "PS_5" ke class se banaya gaya hai.
 // and object ke andar data store kiya hai.
-let G1 = new PS_5("Uncharted", "Action_Adventure", 9999) 
+let G1 = new PS_5("Uncharted", "Action_Adventure", 9999)
 console.log(G1)
-let G2 = new PS_5("Last of Us", "Action", 5999)
+let G2 = new PS_5("Last of Us", "Action", 5999) // multiple object.
 console.log(G2)
 
 
