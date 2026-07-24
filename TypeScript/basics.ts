@@ -57,7 +57,13 @@
 // console.log(abc(25, 20))
 
 // 'void' use when jab function not returning vlaue. jab koi value return nahi hoti tab 'void' use karo.
-function welcome():void{ // 'void' show like undefine.
-    console.log("Hit-Man");
-} 
-welcome()
+// function welcome():void{ // 'void' show like undefine.
+//     console.log("Hit-Man");
+// } 
+// welcome()
+
+// we can also set default parameter value.
+let abc = (a:number, b:string = "Hey"):number | string => {
+    return a+ b
+}
+console.log(abc(45)) // here we pass only value of 'a' and value of 'b' is empty then they use default value.(45Hey)
